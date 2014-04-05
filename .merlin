@@ -1,0 +1,7 @@
+PKG unit ospec lwt lwt.syntax deriving-ocsigen deriving-ocsigen.syntax equeue rpclib netamqp js_of_ocaml.deriving js_of_ocaml.deriving.syntax calendar pa_ounit.syntax oUnit async_parallel async async_extra riak
+S src
+S test
+S examples
+B _build/test
+EXT deriving-ocsigen.syntax pa_ounit.syntax pa_js.syntax lwt.syntax 
+
