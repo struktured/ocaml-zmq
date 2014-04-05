@@ -7,8 +7,8 @@ bind responder "tcp://*:5555";
 
 while true do
   let request = recv responder in
-  Printf.printf "Received request: [%s]\n%!" request;
-  send responder "World"
+  Printf.printf "(%s) Received request: [%s]\n%!" (Unix.gethostname()) request;
+  send responder ("(" ^ (Unix.gethostname()) ^ ") Word")
 done;
 
 close responder;
